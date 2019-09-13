@@ -8,6 +8,7 @@ header{
     grid-area: cabecalho;
     /* border: solid 1px; */
     
+    
 }
 
 
@@ -18,6 +19,10 @@ header{
     background-color: #2466af;
     padding: 5px 0px;
     margin: 5px;
+    text-align: center;
+    position:-webkit-sticky;
+    position: sticky;
+    
 
 
     
@@ -35,6 +40,7 @@ header{
     text-transform: uppercase;
     /* word-spacing: 10px; */
     letter-spacing: 2px;
+    
 
 
 }
@@ -61,6 +67,7 @@ nav{
 
 }
 main{
+    
     grid-area: conteudo;
     border: solid 1px;
     
@@ -76,10 +83,10 @@ body{
     display: grid;
     min-height: 100vh;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 150px 60px 1fr 100px;
-    grid-template-areas: 
-                        'banner banner'
+    grid-template-rows: 60px 300px 1fr 100px;
+    grid-template-areas:                         
                         'cabecalho cabecalho'
+                        'banner banner'
                         'navegacao conteudo'
                         'rodape rodape'
     
@@ -97,5 +104,14 @@ body{
 
 
     }
-    header{display: none;}
+    header{
+        display: none;
+    }
+}
+footer{
+    color: #e19531;
+    text-align-last: center;
+    background-color: #2466af;
+    font-family: 'Alfa Slab One', cursive;
+    
 }
