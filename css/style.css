@@ -1,117 +1,95 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
 }
-header{
+
+header {
     grid-area: cabecalho;
-    /* border: solid 1px; */
-    
-    
-}
-
-
-
-.menu_superior{
-	width: 100%;
-	overflow: hidden;
-    background-color: #2466af;
+    width: 100%;
+    overflow: hidden;
     padding: 5px 0px;
     margin: 5px;
     text-align: center;
-    position:-webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
-    
-
-
-    
 }
 
-.menu_superior a{
+.logo{
+    width: 10%;
+    float: left;
+    padding: 10px 12px;
+    margin: 0px;
+}
+
+
+
+.menu_superior a {
     font-family: 'Alfa Slab One', cursive;
     font-size: 1em;
-	text-decoration: none;
-	display: inline-block;
-	color: #e19531;
-	text-align: center;
-	padding: 10px 12px; 
+    text-decoration: none;
+    display: inline-block;
+    color: #e19531;
+    text-align: center;
+    padding: 10px 12px;
     margin: 0px;
     text-transform: uppercase;
     /* word-spacing: 10px; */
     letter-spacing: 2px;
-    
-
-
 }
-.menu_superior a:hover{
+
+.menu_superior a:hover {
     /* height: 100%; */
     border-radius: 2px;
     background-color: #e9ae4a;
-    color: black;
-    
-    
+    color: #2466af;
 }
 
-
-
-
-section{
+section {
     grid-area: banner;
     border: solid 1px;
+    /* cor do fundo do banner #80d2e2 */
 }
-nav{
+
+nav {
     grid-area: navegacao;
     border: solid 1px;
-    
-
 }
-main{
-    
+
+main {
     grid-area: conteudo;
     border: solid 1px;
-    
-
 }
-footer{
+
+footer {
     grid-area: rodape;
     border: solid 1px;
-    
-
 }
-body{
+
+body {
     display: grid;
     min-height: 100vh;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 60px 300px 1fr 100px;
-    grid-template-areas:                         
-                        'cabecalho cabecalho'
-                        'banner banner'
-                        'navegacao conteudo'
-                        'rodape rodape'
-    
+    grid-template-areas: 'cabecalho cabecalho' 'banner banner' 'navegacao conteudo' 'rodape rodape'
 }
 
-@media(max-width: 700px){
-    body{
+@media(max-width: 700px) {
+    body {
         grid-template-columns: 1fr;
         grid-template-rows: 80px 1fr 100px;
-        grid-template-areas: 
-                            'banner'
-                            'navegacao'
-                            'conteudo'
-                            'rodape';
-
-
+        grid-template-areas: 'banner' 'navegacao' 'conteudo' 'rodape';
     }
-    header{
+    header {
         display: none;
     }
 }
-footer{
+
+footer {
     color: #e19531;
-    text-align-last: center;
+    text-align: center;
     background-color: #2466af;
-    font-family: 'Alfa Slab One', cursive;
-    
+    padding: 10px 12px;
+    margin: 0px;
+    font-size: 15px;
 }
