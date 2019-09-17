@@ -1,28 +1,35 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    /* padding: 0px; */
+    margin: 0px;
 }
+
+html {
+    height: 100%;
+}
+
+/* MENU DO SITE */
 
 header {
     grid-area: cabecalho;
-    width: 100%;
-    overflow: hidden;
     padding: 5px 0px;
-    margin: 5px;
+    margin: 0px;
     text-align: center;
-    position: -webkit-sticky;
     position: sticky;
+    background-color: white;
+    top: 10px;
+    /* width: 100%; */
+    /* border: solid 2px; */
+    box-sizing: border-box;
+    height: 50px;
 }
 
-.logo{
+.logo {
     width: 10%;
     float: left;
     padding: 10px 12px;
     margin: 0px;
 }
-
-
 
 .menu_superior a {
     font-family: 'Alfa Slab One', cursive;
@@ -32,7 +39,7 @@ header {
     color: #e19531;
     text-align: center;
     padding: 10px 12px;
-    margin: 0px;
+    /* margin: 0px; */
     text-transform: uppercase;
     /* word-spacing: 10px; */
     letter-spacing: 2px;
@@ -45,33 +52,66 @@ header {
     color: #2466af;
 }
 
+/* BANNER SENAI LAB */
+
 section {
     grid-area: banner;
-    border: solid 1px;
+    /* border: solid 1px; */
     /* cor do fundo do banner #80d2e2 */
+    margin-right: 5px;
+    margin-left: 5px;
 }
+
+.banner {
+    width: 100%;
+
+}
+
+/* NAVEGAÇÃO POR TAGS */
 
 nav {
     grid-area: navegacao;
     border: solid 1px;
+    margin: 5px;
 }
+
+.titulo {
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav ul {
+    margin-top: 30px;
+}
+
+nav li {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px;
+}
+
+/* CONTEUDO QUE SERÁ APRESENTADO AO CLICAR EM UMA TAG */
 
 main {
     grid-area: conteudo;
     border: solid 1px;
+    margin: 5px;
 }
 
 footer {
     grid-area: rodape;
-    border: solid 1px;
+    /* border: solid 1px; */
 }
 
 body {
     display: grid;
     min-height: 100vh;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 60px 300px 1fr 100px;
-    grid-template-areas: 'cabecalho cabecalho' 'banner banner' 'navegacao conteudo' 'rodape rodape'
+    grid-template-rows: 70px 300px 1fr 100px;
+    grid-template-areas: 'cabecalho cabecalho' 'banner banner' 'navegacao conteudo' 'rodape rodape';
 }
 
 @media(max-width: 700px) {
@@ -80,16 +120,32 @@ body {
         grid-template-rows: 80px 1fr 100px;
         grid-template-areas: 'banner' 'navegacao' 'conteudo' 'rodape';
     }
-    header {
-        display: none;
-    }
 }
 
 footer {
-    color: #e19531;
+    color: #282be2;
     text-align: center;
-    background-color: #2466af;
+    background-color: #55cfcf;
     padding: 10px 12px;
     margin: 0px;
     font-size: 15px;
+}
+
+/* TESTES */
+
+.imp {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+}
+
+h5 {
+    text-align: justify;
+    margin: 10px;
 }
