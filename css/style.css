@@ -16,7 +16,7 @@ header {
     margin: 0px;
     text-align: center;
     position: sticky;
-    background-color: white;
+    background-color: rgb(250, 250, 250);
     top: 10px;
     /* width: 100%; */
     /* border: solid 2px; */
@@ -128,10 +128,25 @@ body {
 footer {
     color: #282be2;
     text-align: center;
-    background-color: #55cfcf;
+    background-color: #e6eaec;
     padding: 10px 12px;
     margin: 0px;
     font-size: 15px;
+}
+.texto_rodape{
+    float: left;
+    width: 20%;
+}
+.bolha_rodape{
+    
+
+    padding: 0px; 
+    margin: 0px;
+    width: 8%;
+    
+    
+    
+    
 }
 
 /* TESTES */
